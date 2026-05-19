@@ -21,4 +21,9 @@ public class User {
         map.put(user2, new Object());
         System.out.println(map);
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, children, birthday);
+    }
 }
