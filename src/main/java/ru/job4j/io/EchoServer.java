@@ -23,6 +23,7 @@ public class EchoServer {
                             output.write("Hello, dear friend.".getBytes());
                         } else if (string.contains("msg=Exit")) {
                             server.close();
+                            break;
                         } else {
                             output.write("HTTP/1.1 200 OK\r\n\r\n".getBytes());
                             output.write(string.getBytes());
