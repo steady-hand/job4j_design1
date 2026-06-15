@@ -55,4 +55,20 @@ public class Person {
             e.printStackTrace();
         }
     }
+
+    public void setSex(boolean sex) {
+        this.sex = sex;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public boolean getSex() {
+        return false;
+    }
 }
