@@ -1,9 +1,9 @@
-create table animals(
-    id serial primary key,
-    name character varying(255),
-    area text
-);
+-- public.animals
+SELECT * FROM public.animals;
 
-insert into animals(name, area) values('Гризли', 'США');
+INSERT INTO public.animals (name, area)
+VALUES ('Гризли', 'США');
 
-update animals set name = 'Гризли';
+UPDATE public.animals
+SET name = 'Гризли'
+WHERE name IS NOT NULL;
